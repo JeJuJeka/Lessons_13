@@ -1,0 +1,344 @@
+/* Шрифти */
+
+/* Обнулення */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+
+body {
+	line-height: 1;
+}
+
+/* Налаштування */
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	overflow: hidden;
+	max-width: 100%;
+	background: url("../img/HijH.jpg") 0 0 / cover no-repeat fixed;
+}
+
+.fon {
+	opacity: 0;
+	animation: fons 22s ease;
+}
+
+
+
+@keyframes fons {
+	0% {
+		opacity: 1;
+	}
+
+	85% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+.guys {
+	opacity: 0;
+	animation: invis 18s ease;
+}
+
+@keyframes invis {
+	0% {
+		opacity: 1;
+	}
+
+	99% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.harry {
+	position: absolute;
+	top: 540px;
+	right: 530px;
+	z-index: 2;
+	animation: guys 3s linear 15s;
+}
+
+.ron {
+	position: absolute;
+	top: 540px;
+	right: 695px;
+	z-index: 2;
+	animation: guys 3s linear 15s;
+}
+
+.hermiona {
+	position: absolute;
+	top: 540px;
+	right: 825px;
+	z-index: 2;
+	animation: guys 3s linear 15s;
+}
+
+@keyframes guys {
+	0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(-250px, 400px);
+	}
+}
+
+.replic-one {
+	position: absolute;
+	top: 170px;
+	left: 500px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 3s;
+}
+
+.replic-two {
+	position: absolute;
+	top: 230px;
+	left: 700px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 6s;
+}
+
+.replic-three {
+	position: absolute;
+	top: 170px;
+	left: 500px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 9s;
+}
+
+.replic-four {
+	position: absolute;
+	top: 170px;
+	left: 700px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 12s;
+}
+
+@keyframes replic {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* Налаштування 2 */
+
+
+.hagrid {
+	position: absolute;
+	top: 260px;
+	right: 1200px;
+	animation: hagr 40s ease;
+}
+
+@keyframes hagr {
+	0% {
+		opacity: 0;
+	}
+
+	49% {
+		opacity: 0;
+	}
+
+	52% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.hermiona-two {
+	position: absolute;
+	top: 640px;
+	right: 950px;
+	z-index: 1;
+	animation: guys-two 5s linear 21s;
+}
+
+.ron-two {
+	position: absolute;
+	top: 640px;
+	right: 800px;
+	z-index: 1;
+	animation: guys-two 5s linear 21s;
+}
+
+.harry-two {
+	position: absolute;
+	top: 640px;
+	right: 1100px;
+	z-index: 1;
+	animation: guys-two 5s linear 21s;
+}
+
+.guys-two {
+	opacity: 0;
+	animation: invis-two 60s ease 21s;
+}
+
+@keyframes invis-two {
+	0% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes guys-two {
+	0% {
+		transform: translate(-800%, 0px);
+	}
+
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+.replic-five {
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 24s;
+}
+
+.replic-six {
+	position: absolute;
+	top: 300px;
+	left: 350px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 27s;
+}
+
+.replic-seven {
+	position: absolute;
+	top: 300px;
+	left: 250px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 30s;
+}
+
+.replic-eight {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 33s;
+}
+
+.replic-nine {
+	position: absolute;
+	top: 340px;
+	left: 500px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 36s;
+}
+
+.replic-ten {
+	position: absolute;
+	top: 60px;
+	left: 210px;
+	opacity: 0;
+	z-index: 2;
+	animation: replic 3s ease 39s;
+}
+
+.continued {
+	position: absolute;
+	top: 100px;
+	left: 850px;
+	opacity: 0;
+	z-index: 3;
+	animation: contin 3s linear 45s infinite;
+}
+
+@keyframes contin {
+	0% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
